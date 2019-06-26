@@ -15,6 +15,7 @@ import Dashboard from "./dossiers/Dashboard";
 
 // individual pages
 import HomePage from "./homePage/HomePage";
+import Gallery from "./gallery/Gallery";
 import Dossiers from "./dossiers/Dossiers";
 import DossierForm from "./dossiers/DossierForm";
 import NotesToSelf from "./notesToSelf/NotesToSelf";
@@ -51,6 +52,7 @@ class App extends Component {
               <div className="container">
                 <Switch>
                   <Route exact path="/" component={HomePage} />
+
                   <PrivateRoute exact path="/dossiers" component={Dossiers} />
 
                   <PrivateRoute
@@ -68,6 +70,7 @@ class App extends Component {
                     path="/newNote"
                     component={NotesToSelfForm}
                   />
+                  <Route exact path="/gallery" component={Gallery} />
                   <Route exact path="/register" component={Register} />
                   <Route exact path="/login" component={Login} />
                 </Switch>

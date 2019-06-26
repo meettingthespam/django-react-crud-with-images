@@ -41,6 +41,11 @@ export class Header extends Component {
             New Note
           </Link>
         </li>
+        <li className="nav-item">
+          <Link to="/gallery" className="nav-link">
+            Gallery
+          </Link>
+        </li>
         <li className="p-2 nav-item">
           <button onClick={this.props.logout} className="btn btn-secondary">
             Logout
@@ -54,12 +59,17 @@ export class Header extends Component {
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
           <Link to="/register" className="nav-link">
-            Register
+            Registersafdsdfsd
           </Link>
         </li>
         <li className="nav-item">
           <Link to="/login" className="nav-link">
             Login
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/gallery" className="nav-link">
+            Gallery
           </Link>
         </li>
       </ul>
